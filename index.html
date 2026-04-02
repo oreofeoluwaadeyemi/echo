@@ -3,101 +3,230 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Echo</title>
+    <title>E-Citi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <nav>
+
+  <body class="font-sans text-gray-800">
+    <!-- NAVBAR -->
+    <nav class="flex justify-between items-center p-4 bg-white shadow">
       <img src="/echo-logo-m.png" alt="" />
-      <div>
-        <div>
-          <p>English</p>
-          <img src="/arrow-down-m.png" alt="" />
-        </div>
+      <div class="flex gap-4 text-sm">
+        <span>English</span>
+        <img src="/arrow-down,d.png" alt="" />
         <img src="/menu-m.png" alt="" />
       </div>
     </nav>
 
-    <section>
-      <div>
-        <h2>
-          Empowering Citizens, Strengthening Governance in <span>Ekiti</span>
-        </h2>
-      </div>
-      <div>
-        Building a transparent, inclusive Ekiti where public services are
-        accessible and citizens play an active role in governance.
-      </div>
-      <div>
-        <button>Get Started</button>
-        <button>Sign in</button>
-      </div>
-    </section>
+    <!-- HERO -->
+    <section class="relative text-white">
+      <img
+        src="/background-image-m.png"
+        class="absolute w-full h-full object-cover"
+      />
 
-    <section>
-      <div>
-        <p>FEATURES</p>
-        <h2>Your Gareway to Smarter Civic Engangement</h2>
-        <p>
-          Explore local initiatives, share feedback, and get real-time
-          updates—all in one simple app.
+      <div class="relative bg-black/60 p-6 text-center">
+        <h1 class="text-2xl md:text-4xl font-bold mb-3">
+          Empowering Citizens, Strengthening Governance in
+          <span class="bg-orange-700 px-2 rounded">Ekiti</span>
+        </h1>
+
+        <p class="text-sm md:text-base mb-4">
+          Building a transparent, inclusive Ekiti where public services are
+          accessible and citizens play an active role in governance.
         </p>
-      </div>
 
-      <div>
-        <div>
-          <img src="/search-m.png" alt="" />
-          <h2>Explore government initiatives near you</h2>
-          <p>
-            Explore updates on health, education, infrastructure, and more —
-            right in your community.
+        <button class="bg-green-600 w-full py-2 rounded mb-3">Sign Up</button>
+
+        <button class="border border-orange-400 w-full py-2 rounded">
+          Sign In
+        </button>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="p-6 text-center">
+      <h2 class="text-xs text-gray-700 mb-2">FEATURES</h2>
+      <h2 class="text-orange-700 font-bold mb-6">
+        Your Gateway to Smarter Civic Engagement
+      </h2>
+      <p>
+        Explore local initiatives, share feedback, and get real-time updates—all
+        in one simple app.
+      </p>
+
+      <div class="space-y-6">
+        <div class="text center">
+          <img src="/laptop-share-m.png" class="mx-auto mb-4" alt="" />
+          <h3 class="text-x1 font-semibold mb-2">
+            Share your experience & feedback
+          </h3>
+          <p class="text-gray-600"></p>
+          Your voice matters. Tell us what’s working and what needs
+          attention—your feedback helps shape better policies and services.
+        </div>
+
+        <div class="text center">
+          <img src="/search-m.png" class="mx-auto mb-4" alt="" />
+          <h3 class="font-semibold">Explore government initiatives near you</h3>
+          <p class="text-sm text-gray-600">
+            Discover projects and programs happening in your community. From
+            health to infrastructure, see how the government is working to
+            improve lives around you.
           </p>
         </div>
+
         <div>
-          <img src="/laptop-share-m.png" alt="" />
-          <h2>Share your experience & feedback</h2>
-          <p>
-            Your voice matters. Share feedback to help improve public services.
-          </p>
-        </div>
-        <div>
-          <img src="/smartphone-m.png" alt="" />
-          <h2>Stay Informed with Real-Time Updates</h2>
-          <p>
-            Get updates, announcements, and reports from your local and state
-            government — all in one place.
+          <img src="/smartphone-m.png" class="mx-auto mb-4" alt="" />
+          <h3 class="font-semibold">Stay Informed with Real-Time Updates</h3>
+          <p class="text-sm text-gray-600">
+            Get instant access to the latest news, announcements, and progress
+            reports from your local and state government all in one place.
           </p>
         </div>
       </div>
     </section>
 
-    <section>
-      <div>
-        <div>
-          <p>OUR KEY BENEFITS</p>
-          <h2>Making Governance Accessible</h2>
+    <!-- BENEFITS -->
+    <section class="bg-green-100 p-6 text-center">
+      <h3 class="text-xs text-gray-700 mb-2">KEY BENEFITS</h3>
+      <h2 class="text-orange-500 font-semibold mb-6">
+        Making Governance Accessible
+      </h2>
+
+      <div class="min-h-screen bg-emerald-50 py-16 px-4">
+        <div class="mx-auto flex flex-col items-center gap-16">
+          <!-- Easy Feedback Channels -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm mb-4"
+            >
+              <img src="/easy-m.png" alt=""  />
+            </div>
+            <p class="text-xl font-semibold text-gray-800">
+              Easy Feedback Channels
+            </p>
+          </div>
+
+          <!-- Community Centered Design -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm mb-4"
+            >
+              <img src="/community-m.png" alt=""  />
+            </div>
+            <p class="text-xl font-semibold text-gray-800">
+              Community Centered Design
+            </p>
+          </div>
+
+          <!-- Verified Government Updates -->
+          <div class="flex flex-col items-center text-center">
+            <div class="rounded-full flex items-center justify-center">
+              <img
+                src="/verified government updates-m.png"
+                alt=""
+                
+              />
+            </div>
+            <p class="text-xl font-semibold text-gray-800">
+              Verified Government Updates
+            </p>
+          </div>
+
+          <!-- Empowerment Through Awareness -->
+          <div class="flex flex-col items-center text-center">
+            <div class="flex items-center justify-center">
+              <img src="/empowerment-m.png" alt="" />
+            </div>
+            <p class="text-xl font-semibold text-gray-800">
+              Empowerment Through Awareness
+            </p>
+          </div>
         </div>
-        <div>
-          <div>
-            <img src="/easy-m.png" alt="" />
-            <p>Easy Feedback Channels</p>
-          </div>
-          <div>
-            <img src="/community-m.png" alt="">
-            <p>Community Centered Design</p>
-          </div>
-          <div>
-            <img src="/verified government updates-m.png" alt="">
-            <p>Verified Government Updates</p>
-          </div>
-          <div>
-            <img src="/empowerment-m.png" alt="">
-            <p>Empowerment Through Awareness</p>
+        <div class="text-center mt-16">
+          <p class="text-xl font-bold">PARTNERS</p>
+          <div class="flex justify-center gap-8 mt-6">
+            <img src="/lagos-m.png" alt="">
+          <img src="/ekiti-m.png" alt="">
+          <img src="/ondo.png" alt="">
           </div>
         </div>
-      </div>
-      <div>
-        
       </div>
     </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="p-6">
+      <h2 class="text-center text-orange-500 mb-4">What People Say</h2>
+
+      <div class="space-y-4">
+        <div class="bg-gray-100 p-4 rounded-xl shadow">
+          <p class="text-sm mb-3">
+            A visual guide could be a wireframe, creative composition,
+            or information architecture. A device that enables collaboration
+            will lessen the chance of work having to be completely redone.
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="/john-carter-m.png" class="w-10 h-10 rounded-full" />
+            <div>
+              <p class="font-semibold text-sm">John Carter</p>
+              <p class="text-xs text-gray-500">Business Woman</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 p-4 rounded-xl shadow">
+          <p class="text-sm mb-3">
+            A visual guide could be a wireframe, creative composition,
+            or information architecture. A device that enables collaboration
+            will lessen the chance of work having to be completely redone.
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="/john-carter-m.png" class="w-10 h-10 rounded-full" />
+            <div>
+              <p class="font-semibold text-sm">John Carter</p>
+              <p class="text-xs text-gray-500">Business Woman</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 p-4 rounded-xl shadow">
+          <p class="text-sm mb-3">
+            A visual guide could be a wireframe, creative composition,
+            or information architecture. A device that enables collaboration
+            will lessen the chance of work having to be completely redone.
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="/john-carter-m.png" class="w-10 h-10 rounded-full" />
+            <div>
+              <p class="font-semibold text-sm">John Carter</p>
+              <p class="text-xs text-gray-500">Business Woman</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-gray-800 rounded-xl text-white p-6 text-center">
+      <h3 class="mb-3">Stay Connected. Get Involved</h3>
+      <p class="text-sm mb-4">
+        Discover local government projects, share your feedback, and get
+        real-time updates—all from one place.
+      </p>
+
+      <button class="bg-orange-400 px-6 py-2 rounded">Sign Up</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 text-center p-4">
+      <div class="flex justify-center gap-4 mb-3 text-white">
+        <img src="/Social Media Container.png" alt="" />
+      </div>
+      <p class="text-xs">Features Testimonials</p>
+      <p class="text-xs">
+        Copyright © 2023 BRIX Templates | All Rights Reserved
+      </p>
+    </footer>
   </body>
 </html>
